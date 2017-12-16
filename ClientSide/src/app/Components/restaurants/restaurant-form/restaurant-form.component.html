@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <h2>Adicionar restaurante</h2>
+      <form class="form-control" #restaurantForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="form-group has-danger" [ngClass]="getFormGroupClass(name.valid, name.pristine)">
+              <label for="name">Nome:</label>
+              <input type="text" #name="ngModel" [(ngModel)]="restaurant.name" name="name" class="form-control is-invalid" id="name" required
+                [ngClass]="getFormControlClass(name.valid, name.pristine)">
+              <div class="invalid-feedback" [hidden]="name.valid || name.pristine">
+                Campo inválido!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <a>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="!restaurantForm.valid">Salvar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <button type="button" class="btn btn-default btn-lg btn-block" (click)="goBack()">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\bin\Debug\netcoreapp2.0\CedroRestaurant.deps.json
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\bin\Debug\netcoreapp2.0\CedroRestaurant.runtimeconfig.json
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\bin\Debug\netcoreapp2.0\CedroRestaurant.runtimeconfig.dev.json
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\bin\Debug\netcoreapp2.0\CedroRestaurant.dll
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\bin\Debug\netcoreapp2.0\CedroRestaurant.pdb
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.csprojResolveAssemblyReference.cache
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.csproj.CoreCompileInputs.cache
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.AssemblyInfoInputs.cache
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.AssemblyInfo.cs
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.dll
+C:\Users\Kalleo\Documents\Projetos\CedroRestaurant\CedroRestaurant\obj\Debug\netcoreapp2.0\CedroRestaurant.pdb

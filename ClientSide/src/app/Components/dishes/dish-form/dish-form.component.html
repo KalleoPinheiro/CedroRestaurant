@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <h2>Adicionar prato</h2>
+      <form class="form-control" (ngSubmit)="onSubmit()" #dishForm="ngForm" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="form-group has-danger" [ngClass]="getFormGroupClass(name.valid, name.pristine)">
+              <label for="name">Nome:</label>
+              <input type="text" #name="ngModel" class="form-control is-invalid" name="name" id="name" [(ngModel)]="dish.name" required
+                [ngClass]="getFormControlClass(name.valid, name.pristine)">
+              <div class="invalid-feedback" [hidden]="name.valid || name.pristine">
+                Campo inválido!
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="form-group has-danger" [ngClass]="getFormGroupClass(price.valid, price.pristine)">
+              <label for="price">Preço:</label>
+              <input type="text" #price="ngModel" class="form-control is-invalid" name="price" id="price" [(ngModel)]="dish.price" required
+                [ngClass]="getFormControlClass(price.valid, price.pristine)">
+              <div class="invalid-feedback" [hidden]="price.valid || price.pristine">
+                Campo inválido!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="form-group has-danger" [ngClass]="getFormGroupClass(restaurantId.valid, restaurantId.pristine)">
+              <label for="restaurantId">Restaurante:</label>
+              <select #restaurantId="ngModel" class="form-control" [(ngModel)]="dish.restaurantId" id="restaurantId" name="restaurantId">
+                <option value="{{restaurant.id}}" *ngFor="let restaurant of restaurants">{{restaurant.name}}</option>
+              </select>
+              <div class="invalid-feedback" [hidden]="restaurantId.valid || restaurantId.pristine">
+                Campo inválido!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <a>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="!dishForm.form.valid">Salvar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <button type="button" class="btn btn-default btn-lg btn-block" (click)="goBack()">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
